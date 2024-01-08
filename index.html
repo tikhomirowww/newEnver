@@ -185,9 +185,9 @@
             <img src="./images/logo.png" alt="Enver logo" />
           </div>
           <ul>
-            <li><a href=""> Support</a></li>
-            <li><a href=""> Privacy Policy</a></li>
-            <li><a href=""> Terms and Conditions</a></li>
+            <li>Support</li>
+            <li>Privacy Policy</li>
+            <li>Terms and Conditions</li>
           </ul>
           <span class="site-data">© 2022 Enver, All Rights Reserved</span>
         </nav>
@@ -207,6 +207,12 @@
           ul.style.height = "100px";
         }
         count++;
+      });
+      window.addEventListener("resize", (e) => {
+        console.log(e.target.screen.availWidth);
+        if (e.target.screen.availWidth >= 840) {
+          ul.style.height = 0;
+        }
       });
     </script>
   </body>

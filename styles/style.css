@@ -36,7 +36,16 @@ body {
   list-style-type: none;
 }
 
+.navbar li {
+  list-style-type: none;
+  color: var(--main-color);
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: var(--nav-size);
+}
+
 .navbar a {
+  list-style-type: none;
   color: var(--main-color);
   text-decoration: none;
   transition: 0.3s;
